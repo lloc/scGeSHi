@@ -1,4 +1,4 @@
-#scGeSHi
+# scGeSHi
 
 Simple code highlighting plugin for your remote source files
 
@@ -6,7 +6,7 @@ It is powered by the [GeSHi engine](http://qbnz.com/highlighter/) which supports
 
 The plugin is using styles like [Code Snippet](http://wordpress.org/extend/plugins/codesnippet-20/). Thanks to Roman Roan and Wyatt Neal.
 
-##Installation
+## Installation
 
 - download the plugin
 - uncompress it with your preferred unzip programme

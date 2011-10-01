@@ -26,10 +26,39 @@ along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 */
 
+/**
+ * scGeSHi
+ *
+ * With scGeSHi you can use a shortcode like
+ * [source href="http://source_code_url" lang="php"]
+ * in your post when you want to show a code-example.
+ *  
+ * @package scGeSHi
+ */
+
+/**
+ * PHP 5.2 is required
+ */
 define ('SCGESHI_MIN_PHP', '5.2');
+
+/**
+ * WordPress 2.8 is required
+ */
 define ('SCGESHI_MIN_WP', '2.8');
+
+/**
+ * Plugin uses scg_ as prefix
+ */
 define ('SCGESHI_TPREFIX', 'scg_');
 
+/**
+ * Plugin Activation Hook
+ * 
+ * The function will check which version of PHP and Wordpress is installed and
+ * die if the minimum requirements are not satisfied.
+ *
+ * @package scGeSHi
+ */
 function scGeSHi_activate () {
 	$error = '';
 	$phpversion = phpversion();
@@ -44,13 +73,33 @@ function scGeSHi_activate () {
 }
 register_activation_hook (__FILE__, 'scGeSHi_activate');
 
+/**
+ * Plugin Deactivation Hook
+ * 
+ * The function will clear all related entries in the database
+ * 
+ * @package scGeSHi
+ */
 function scGeSHi_deactivate () {
 	scGeSHi::clear ();
 }
 register_deactivation_hook (__FILE__, 'scGeSHi_deactivate');
 
+/**
+ * GeSHi Adapter 
+ *
+ * @package scGeSHi
+ */
 class scGeSHi {
 
+    /**
+     * Return parsed code
+     * 
+     * @access public
+     * @param string $source
+     * @param string $lang
+     * return string
+     */
 	public function get ($source, $lang) {
 		if (!class_exists ('geshi')) { 
 			require_once ('geshi.php');
@@ -65,22 +114,32 @@ class scGeSHi {
 		return $geshi->parse_code ();
     }
 
-	static function clear () {
+    /**
+     * Delete all plugin-related entries in the database
+     */
+	public static function clear () {
 		global $wpdb;
 		$wpdb->query ("DELETE FROM {$wpdb->options} WHERE option_name like '%_transient_%{SCGESHI_TPREFIX}%'");
 	}
 
 }
 
-function my_scGeSHi ($atts) {
+/**
+ * Handles the shortcode
+ * 
+ * @package scGeSHi
+ * @param array $attr
+ * @return string
+ */
+function my_scGeSHi (array $attr) {
 	extract (
-		shortcode_atts (
+		shortcode_attr (
 			array (
 				'lang' => 'php',
 				'href' => '',
 				'out' => 'An error occurred while processing your request.',
 			),
-			$atts
+			$attr
 		)
 	);
 	if (!empty ($href)) {

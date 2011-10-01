@@ -3,7 +3,7 @@ Contributors: realloc
 Donate link: http://www.greenpeace.org/international/
 Tags: scGeSHi, geshi, syntax highlighting, code, highlight, syntax, syntax highlight
 Requires at least: 2.8
-Tested up to:  3.2
+Tested up to:  3.3
 Stable tag: 0.3
 
 Simple code highlighting plugin for your remote source files
