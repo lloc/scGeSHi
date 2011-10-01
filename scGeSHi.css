@@ -1,0 +1,13 @@
+.scgeshi-container { border:1px solid #ccc; background:#eee; padding:5px; margin:10px 0; }
+.scgeshi { text-align:left; direction:ltr; }
+.scgeshi .de1,.php-brief .de2,.php .de1,.php .de2 { font-weight:normal; background:transparent; color:#000; }
+.scgeshi .kw1,.php .kw1 { color:#a1a100; }
+.scgeshi .kw2,.php .kw2 { color:#000; font-weight:bold; }
+.scgeshi .kw3,.php .kw3 { color:#006; }
+.scgeshi .kw4,.php .kw4 { color:#f63333; }
+.scgeshi .co1,.scgeshi .co2,.scgeshi .coMULTI,.scgeshi .co1,.scgeshi .co2,.scgeshi .coMULTI { color:#808080; }
+.scgeshi .es0,.php .es0 { color:#003; font-weight:bold; }
+.scgeshi .br0,.php .br0 { color:#6c6; }
+.scgeshi .st0,.php .st0 { color:#f00; }
+.scgeshi .nu0,.php .nu0 { color:#f3f; }
+.scgeshi .me0,.php .me0 { color:#060; }
