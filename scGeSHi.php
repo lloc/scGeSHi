@@ -165,10 +165,8 @@ add_shortcode ('source', 'my_scGeSHi');
  */
 function my_scGeSHi_stylesheet() {
     $url = plugins_url('scGeSHi.css', __FILE__);
-    if ( file_exists($myStyleFile) ) {
-        wp_register_style('scGeSHistyle', $url);
-        wp_enqueue_style('scGeSHistyle');
-    }
+    wp_register_style('scGeSHistyle', $url);
+    wp_enqueue_style('scGeSHistyle');
 }
 add_action('wp_print_styles', 'my_scGeSHi_stylesheet');
 
