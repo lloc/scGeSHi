@@ -131,15 +131,15 @@ class scGeSHi {
  * @param array $attr
  * @return string
  */
-function my_scGeSHi (array $attr) {
+function my_scGeSHi (array $atts) {
 	extract (
-		shortcode_attr (
+		shortcode_atts (
 			array (
 				'lang' => 'php',
 				'href' => '',
 				'out' => 'An error occurred while processing your request.',
 			),
-			$attr
+			$atts
 		)
 	);
 	if (!empty ($href)) {
