@@ -4,7 +4,7 @@ Donate link: http://www.greenpeace.org/international/
 Tags: scGeSHi, geshi, syntax highlighting, code, highlight, syntax, syntax highlight
 Requires at least: 2.8
 Tested up to:  3.3
-Stable tag: 0.3
+Stable tag: 0.4
 
 Simple code highlighting plugin for your remote source files
 
@@ -23,9 +23,11 @@ The plugin is using styles like [Code Snippet](http://wordpress.org/extend/plugi
 - copy the entire directory myLCO in your plugins directory of your wordpress blog (/wp-content/plugins)
 - activate the plugin in your plugins admin page
 - now you can use shortcodes like [source href="http://source_code_url" lang="php"]
-- you can style the the output very easy if you include the contents of the scGeSHi.css in the style.css of your theme
 
 == Changelog ==
+
+= 0.4 =
+* scGeSHi uses its own styles "out of the box"
 
 = 0.3 =
 * update: GeSHi 1.0.8.10

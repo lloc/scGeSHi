@@ -13,4 +13,3 @@ The plugin is using styles like [Code Snippet](http://wordpress.org/extend/plugi
 - copy the entire directory myLCO in your plugins directory of your wordpress blog (/wp-content/plugins)
 - activate the plugin in your plugins admin page
 - now you can use shortcodes like `[source href="http://source_code_url" lang="php"]`
-- you can style the the output very easy if you include the contents of the scGeSHi.css in the style.css of your theme
