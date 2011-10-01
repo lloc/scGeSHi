@@ -4,7 +4,7 @@
 Plugin Name: scGeSHi
 Plugin URI: http://lloc.de/scGeSHi
 Description: Simple code highlighting plugin for your remote source files
-Version: 0.3
+Version: 0.4
 Author: Dennis Ploetner	
 Author URI: http://lloc.de/
 */
