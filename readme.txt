@@ -14,7 +14,7 @@ Simple code highlighting plugin for your remote source files
 
 It is powered by the [GeSHi engine](http://qbnz.com/highlighter/) which supports a large number of programming languages
 
-The plugin is using styles like [Code Snippet](http://wordpress.org/extend/plugins/codesnippet-20/). Thanks to Roman Roan and Wyatt Neal.
+The plugin is using styles like [Code Snippet](http://wordpress.org/extend/plugins/codesnippet-20/). Thanks to Roman Roan and Wyatt Neal. In addition, I would like to thank [Jürgen Mayer](http://designetage.com/) for making the banner of this plugin.
 
 == Installation ==
 
